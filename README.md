@@ -1,1 +1,1 @@
-# fullstack-chat
+# fullstack chat application - Textify
