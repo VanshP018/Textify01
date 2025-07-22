@@ -9,4 +9,7 @@ router.post("/login" , login)
 
 router.post("/signup" , logout)
 
+
+router.put("/upate-profile" , updateProfile)
+
 export default router;
