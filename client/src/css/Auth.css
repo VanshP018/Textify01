@@ -1,0 +1,62 @@
+.authBox{
+    background-color: #FCFAF6;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.authContainer {
+    text-align: center;
+    width: 300px;
+    border: 2px solid #507356;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.authContainer h2 {
+    color: #162c1a;
+    margin-bottom: 20px;
+}
+.authContainer form {
+    display: flex;
+    flex-direction: column;
+}
+.authContainer input{
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e6e6e6;
+}
+.authContainer form button{
+    background-color: #65B742;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.authBox p{
+    margin-top: 1rem;
+    font-size: 0.9em;
+    color: #555;
+}
+.authBox p .authLink{
+    color: #507356;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+.authBox img {
+    width: 400px;
+    height: auto;
+    position: absolute;
+    left: 65rem;
+    top: 26rem;
+}

@@ -1,0 +1,32 @@
+CREATE DATABASE IF NOT EXISTS chatApp;
+use chatApp;
+CREATE TABLE users (
+  id CHAR(36) PRIMARY KEY,
+  name VARCHAR(100) NOT NULL UNIQUE,
+  email VARCHAR(255) NOT NULL UNIQUE,
+  password VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE contacts (
+    id VARCHAR(36) PRIMARY KEY,
+    userId VARCHAR(36) NOT NULL,
+    contactName VARCHAR(100) NOT NULL,
+    contactEmail VARCHAR(100) NOT NULL,
+
+    FOREIGN KEY (userId) REFERENCES users(id)
+    ON DELETE CASCADE
+);
+
+CREATE TABLE messages (
+    id VARCHAR(36) PRIMARY KEY,
+    userId VARCHAR(36) NOT NULL,
+    contactId VARCHAR(36) NOT NULL,
+    content TEXT NOT NULL,
+    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+
+    FOREIGN KEY (userId) REFERENCES users(id)
+    ON DELETE CASCADE,
+    
+    FOREIGN KEY (contactId) REFERENCES contacts(id)
+    ON DELETE CASCADE
+);
