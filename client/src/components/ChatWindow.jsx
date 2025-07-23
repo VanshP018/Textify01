@@ -33,8 +33,8 @@ const ChatWindow = () => {
     return (
       <div className="appIntro">
         <img src={appLOGO} />
-        <h1>PandaGram</h1>
-        <p>When pandas don't hibernate, they vibe and relate 🐼🎶</p>
+        <h1>Textify</h1>
+        <p>Connecting the world</p>
       </div>
     );
   }

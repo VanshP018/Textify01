@@ -2,7 +2,6 @@ import React, { useContext, useState } from "react";
 import { LoginUser } from "../api/axios.jsx";
 import { UserContext } from "../context/UserContext.jsx";
 import { Link, useNavigate } from "react-router-dom";
-import loginIMG from "../assets/logo_img.jpg";
 import "../css/Auth.css";
 
 const Login = () => {
@@ -62,7 +61,6 @@ const Login = () => {
           </Link>
         </p>
       </div>
-      <img src={loginIMG} />
     </div>
   );
 };
